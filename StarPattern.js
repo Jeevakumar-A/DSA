@@ -77,38 +77,48 @@
 // }
 
 
-let n =6
+// let n =6
+// // for(let i=0;i<n;i++){
+// //     let row ="";
+// //     for(let j =0;j<n-(i+1);j++){ // we are running the inner loop until n-(i+1) because we want to print one less star than the previous row
+// //         row =row +" ";
+// //     }
+// //     for(let k=0;k<i+1;k++){ // we are running the inner loop until i+1 because we want to print one more star than the previous row
+// //         row =row +"*";
+// //     }
+// //     console.log(row);
+// // }
+
+// //OUTPUT
+// //    *
+// //   **
+// //  ***
+// // ****
+// //*****
+
 // for(let i=0;i<n;i++){
 //     let row ="";
-//     for(let j =0;j<n-(i+1);j++){ // we are running the inner loop until n-(i+1) because we want to print one less star than the previous row
-//         row =row +" ";
-//     }
-//     for(let k=0;k<i+1;k++){ // we are running the inner loop until i+1 because we want to print one more star than the previous row
-//         row =row +"*";
+//     let toggle = 1 // we are declaring a variable toggle which will be used to toggle between 1 and 0 to print alternatively
+//     for(let j =0;j<i+1;j++){
+//         row =row + toggle;
+//         if(toggle == 1){ // we are checking if the toggle variable is 1 then we will set it to 0 and if it is 0 then we will set it to 1
+//             toggle =0;
+//         }
+//         else{
+//             toggle =1;
+//         }
 //     }
 //     console.log(row);
 // }
 
 //OUTPUT
-//    *
-//   **
-//  ***
-// ****
-//*****
 
-for(let i=0;i<n;i++){
-    let row ="";
-    let toggle = 1 // we are declaring a variable toggle which will be used to toggle between 1 and 0 to print alternatively
-    for(let j =0;j<i+1;j++){
-        row =row + toggle;
-        if(toggle == 1){ // we are checking if the toggle variable is 1 then we will set it to 0 and if it is 0 then we will set it to 1
-            toggle =0;
-        }
-        else{
-            toggle =1;
-        }
-    }
-    console.log(row);
-}
 
-//OUTPUT
+let number=5
+// for(i =0;i<number+1;i++){
+//     let row ="";
+//     for(j =0; j<i+1;j++){
+//         row =row+ "*";
+//     }
+//     console.log(row);
+// }
